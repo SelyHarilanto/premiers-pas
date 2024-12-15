@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de connexion pour l'université - Accédez à votre espace personnel.">
+    <meta name="author" content="Université">
+    <meta name="robots" content="index, follow">
+    <title>Se connecter - Université</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Connexion à l'université</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Retour à l'accueil">Accueil</a></li>
+                    <li><a href="profile.html" title="Accédez à votre profil">Mon Profil</a></li>
+                    <li><a href="note.html" title="Accédez au notes">listes des notes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="login-form" aria-labelledby="login-section">
+                <h2 id="login-section">Veuillez vous connecter</h2>
+                <form id="loginForm" action="#" method="POST" aria-describedby="login-form-desc">
+                    <p id="login-form-desc">Entrez vos informations d'identification pour accéder à votre espace universitaire.</p>
+                    
+                    <div class="form-group">
+                        <label for="username">Nom d'utilisateur :</label>
+                        <input type="text" id="username" name="username" required placeholder="Entrez votre nom d'utilisateur" aria-label="Nom d'utilisateur">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Mot de passe :</label>
+                        <input type="password" id="password" name="password" required placeholder="Entrez votre mot de passe" aria-label="Mot de passe">
+                    </div>
+
+                    <button type="submit" class="btn-primary" aria-label="Se connecter">Se connecter</button>
+                </form>
+
+                <p class="forgot-password">
+                    <a href="reset-password.html" title="Réinitialiser votre mot de passe">Mot de passe oublié ?</a>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Université - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
